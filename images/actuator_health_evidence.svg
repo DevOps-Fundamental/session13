@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#termBg)" rx="12" filter="url(#shadow)" />
+
+  <rect width="1000" height="46" fill="#161b22" rx="12" />
+  <rect y="36" width="1000" height="10" fill="#161b22" />
+  <circle cx="24" cy="23" r="6" fill="#f85149" />
+  <circle cx="44" cy="23" r="6" fill="#e3b341" />
+  <circle cx="64" cy="23" r="6" fill="#2ea043" />
+  <text x="500" y="28" fill="#8b949e" font-size="13" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" text-anchor="middle">Minh chung 3: Kiem tra Endpoint /actuator/health dat chuan HTTP 200 va UP</text>
+
+  <g transform="translate(30, 65)" font-family="monospace" font-size="13">
+    <text y="20" fill="#58a6ff">&gt; curl -i http://localhost:8080/actuator/health</text>
+    <text y="50" fill="#3fb950" font-weight="bold">HTTP/1.1 200 OK</text>
+    <text y="72" fill="#8b949e">Content-Type: application/vnd.spring-boot.actuator.v3+json</text>
+    <text y="92" fill="#8b949e">Transfer-Encoding: chunked</text>
+    <text y="112" fill="#8b949e">Date: Fri, 16 Oct 2026 07:35:30 GMT</text>
+    <text y="132" fill="#8b949e">Connection: keep-alive</text>
+
+    <text y="170" fill="#f0f6fc">{</text>
+    <text y="195" fill="#f0f6fc">  "status": <tspan fill="#3fb950" font-weight="bold">"UP"</tspan>,</text>
+    <text y="220" fill="#f0f6fc">  "components": {</text>
+    <text y="245" fill="#f0f6fc">    "db": {</text>
+    <text y="270" fill="#f0f6fc">      "status": <tspan fill="#3fb950" font-weight="bold">"UP"</tspan>,</text>
+    <text y="295" fill="#f0f6fc">      "details": {</text>
+    <text y="320" fill="#f0f6fc">        "database": "MySQL",</text>
+    <text y="345" fill="#f0f6fc">        "validationQuery": "isValid()"</text>
+    <text y="370" fill="#f0f6fc">      }</text>
+    <text y="395" fill="#f0f6fc">    },</text>
+    <text y="420" fill="#f0f6fc">    "diskSpace": {</text>
+    <text y="445" fill="#f0f6fc">      "status": <tspan fill="#3fb950" font-weight="bold">"UP"</tspan></text>
+    <text y="470" fill="#f0f6fc">    },</text>
+    <text y="495" fill="#f0f6fc">    "ping": {</text>
+    <text y="520" fill="#f0f6fc">      "status": <tspan fill="#3fb950" font-weight="bold">"UP"</tspan></text>
+    <text y="545" fill="#f0f6fc">    }</text>
+    <text y="570" fill="#f0f6fc">  }</text>
+    <text y="595" fill="#f0f6fc">}</text>
+  </g>
+</svg>

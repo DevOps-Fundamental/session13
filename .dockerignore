@@ -1,0 +1,11 @@
+.git
+frontend
+backend/.gradle
+backend/build
+backend/bin
+.dockerignore
+Dockerfile
+compose.yml
+docker-compose.yml
+README.md
+images
